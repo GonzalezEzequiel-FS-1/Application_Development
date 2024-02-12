@@ -126,6 +126,7 @@ a:active {
     box-shadow: 5px 5px 5px rgba(124, 53, 112, 0.622);
     letter-spacing: .5rem;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 #button:hover {
