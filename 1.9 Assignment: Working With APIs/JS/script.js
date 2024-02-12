@@ -21,6 +21,19 @@
             console.error('Error:', error);
         });
         }
+        const hideshow =()=>{
+        document.querySelector("#left").style.display="none";
+        document.querySelector("#right").style.display="block";
+        }
+        const buttonClickHandler =()=>{
+        if (window.innerWidth < 900) {
+            hideshow();
+            getNewJoke();
+        }else{
+            document.querySelector("#left").style.display="block";
+            getNewJoke();
+        }
+        }
         getNewJoke();
-        document.querySelector("#button").addEventListener("click", getNewJoke);
+        document.querySelector("#button").addEventListener("click", buttonClickHandler);
 })()

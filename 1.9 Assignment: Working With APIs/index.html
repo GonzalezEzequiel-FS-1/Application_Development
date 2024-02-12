@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -19,19 +21,18 @@
         <p>Ezequiel Gonzalez</p>
         <h3>1.9 Working with APIs</h3>
         <ul>
-            <li>HOME</li>
-            <li>NEWS</li>
-            <li>ABOUT ME</li>
+            <li><a href="./fourzerofour.html">HOME</a></li>
+            <li><a href="./fourzerofour.html">NEWS</a></li>
+            <li><a href="./fourzerofour.html">ABOUT ME</a></li>
         </ul>
     </header>
-    <section id="hero">
-            
+    <section id="hero" aria-live="polite">
             <div id="left">
                 <p class="topText">Joke-A-Matic 2000</p>
                 <p class="bottomText">1,999 times better than version 1</p>
             </div>
             <div id="right">
-                <p id="setup" class="topText"></p>
+                <p id="setup" class="topText" ></p>
                 <p id="delivery" class="bottomText"></p>
             </div>
     </section>
@@ -40,7 +41,6 @@
         <p>EZEQUIEL GONZALEZ</p>
         <p>FullSail University | Application Development | 2024</p>
     </footer>
-
     <script src="./JS/script.js"></script>
 </body>
 
